@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    height: 100%;
+    font-family: 'Poppins';
+    font-weight: lighter;
+    color: #6e6e6e;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: block;
+
+    .login-section {
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+        display: block;
+
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            background: -webkit-linear-gradient(bottom, #c9312c, #d39c36);
+            position: relative;
+            z-index: 1;
+
+            .wrap-login {
+                width: 450px;
+                padding: 77px 50px 30px 50px;
+                margin: 0;
+                background: #ffffff;
+                border-radius: 3px;
+                display: block;
+                box-sizing: border-box;
+                overflow: hidden;
+
+                .form {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    margin: 0;
+                    padding: 0;
+
+                    .form-title {
+                        font-family: 'Raleway';
+                        font-weight: 900;
+                        font-size: 30px;
+                        color: #333;
+                        line-height: 1.2;
+                        text-transform: uppercase;
+                        text-align: center;
+                        width: 100%;
+                        display: block;
+                        padding-bottom: 55px;
+                        margin: 0;
+                        box-sizing: border-box;
+
+                    }
+
+                    input[type='email'],
+                    input[type='password'] {
+                        font-family: 'Raleway';
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 1.2;
+                        color: #6e6e6e;
+                        display: block;
+                        width: 100%;
+                        background: #dddddd;
+                        height: 62px;
+                        border-radius: 3px;
+                        padding: 0 20px;
+                        outline: none;
+                        border: none;
+                        box-sizing: border-box;
+
+                        &::placeholder {
+                            font-family: 'Poppins';
+                            font-weight: lighter;
+                            color: #6e6e6e;
+
+                        }
+                    }
+
+                    .email-container {
+                        position: relative;
+                        width: 100%;
+                        z-index: 1;
+                        margin-bottom: 16px;
+                        display: block;
+
+                    }
+
+                    .password-container {
+                        position: relative;
+                        width: 100%;
+                        z-index: 1;
+                        margin-bottom: 16px;
+                        display: block;
+                    }
+
+                    .checkbox {
+                        margin-left: 4px;
+                        display: block;
+                        cursor: pointer;
+
+                        label {
+                            cursor: pointer;
+                        }
+                    }
+
+
+
+                    .login-button {
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        padding-top: 25px;
+
+
+                        button {
+                            font-family: 'Raleway';
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 1.5;
+                            color: #ffffff;
+                            text-transform: uppercase;
+                            width: 100%;
+                            height: 62px;
+                            border-radius: 3px;
+                            background-color: #d39c36;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 0 25px;
+                            transition: .4s all;
+                            cursor: pointer;
+                            outline: none !important;
+                            border: none;
+                            overflow: visible;
+
+                            &:hover {
+                                background: #c9312c;
+                            }
+                        }
+                    }
+
+                    .text-center {
+                        width: 100%;
+                        padding: 42px 0 22px 0;
+                        text-align: center !important;
+                        display: block;
+                    }
+
+                    .not-a-member {
+                        width: 100%;
+                        padding-top: 115px;
+                        text-align: center !important;
+                        display: block;
+
+                        span {
+                            a {
+                                color: #6e6e6e;
+                            }
+
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+}
