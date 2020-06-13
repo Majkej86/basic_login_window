@@ -100,7 +100,6 @@ body {
                         z-index: 1;
                         margin-bottom: 16px;
                         display: block;
-
                     }
 
                     .password-container {
@@ -115,12 +114,16 @@ body {
                         margin-left: 4px;
                         display: block;
                         cursor: pointer;
+                        transition: all 0.4s;
+
+                        &:hover {
+                            color: #c9312c;
+                        }
 
                         label {
                             cursor: pointer;
                         }
                     }
-
 
 
                     .login-button {
@@ -165,21 +168,90 @@ body {
                         display: block;
                     }
 
-                    .not-a-member {
-                        width: 100%;
-                        padding-top: 115px;
-                        text-align: center !important;
-                        display: block;
+                    .button-fb {
+                        color: #3b5998;
+                        font-family: 'Raleway';
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 1.2;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: calc((100% - 10px) / 2);
+                        height: 40px;
+                        border-radius: 3px;
+                        border: 1px solid #e6e6e6;
+                        background-color: #fff;
+                        padding: 0px;
+                        box-sizing: border-box;
+                        transition: all 0.4s;
+                        text-decoration: none;
 
-                        span {
-                            a {
-                                color: #6e6e6e;
-                            }
+                        &:hover {
+                            border-color: #c9312c;
+                            color: #c9312c;
+                        }
 
+                        i {
+                            font-size: 20px;
+                            margin-right: 10px;
+                            padding-bottom: 1px;
+                            display: inline-block;
                         }
                     }
 
+                    .button-google {
+                        color: #555555;
+                        font-family: 'Raleway';
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 1.2;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: calc((100% - 10px) / 2);
+                        height: 40px;
+                        border-radius: 3px;
+                        border: 1px solid #e6e6e6;
+                        background-color: #fff;
+                        padding: 0px;
+                        box-sizing: inherit;
+                        text-decoration: none;
+                        margin-bottom: 10px;
+                        transition: .4s all;
 
+                        &:hover {
+                            border-color: #c9312c;
+                            color: #c9312c;
+                        }
+
+                        img {
+                            width: 19px;
+                            margin-right: 10px;
+                            padding-bottom: 1px;
+                            vertical-align: middle;
+                            border-style: none;
+                        }
+                    }
+
+                }
+
+                .not-a-member {
+                    width: 100%;
+                    padding-top: 115px;
+                    text-align: center !important;
+                    display: block;
+
+                    span {
+                        a {
+                            color: #6e6e6e;
+                            transition: .4s all;
+
+                            &:hover {
+                                color: #c9312c;
+                            }
+                        }
+                    }
                 }
             }
         }
